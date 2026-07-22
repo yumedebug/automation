@@ -1,0 +1,15 @@
+{
+  "name": "Untitled Workflow",
+  "description": "",
+  "actions": [
+    {
+      "action_type": "OpenApplicationAction",
+      "config": {
+        "app_path": "C:/Users/Admin/Desktop/converter.exe",
+        "arguments": "",
+        "working_directory": "",
+        "run_as_admin": true
+      }
+    }
+  ]
+}

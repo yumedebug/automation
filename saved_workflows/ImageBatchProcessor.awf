@@ -1,0 +1,36 @@
+{
+  "name": "ImageBatchProcessor",
+  "description": "",
+  "actions": [
+    {
+      "action_type": "AskForFilesAction",
+      "config": {
+        "title": "Select Images",
+        "file_types": "*.*",
+        "allow_multiple": true
+      }
+    },
+    {
+      "action_type": "RenameFilesAction",
+      "config": {
+        "pattern": "photo_{counter}",
+        "counter_start": 1,
+        "digits": 4,
+        "find_text": "",
+        "replace_text": "",
+        "mode": "counter",
+        "prefix": "",
+        "suffix": ""
+      }
+    },
+    {
+      "action_type": "ConvertImageAction",
+      "config": {
+        "target_format": "WEBP",
+        "quality": 85,
+        "output_folder": "",
+        "create_subfolder": true
+      }
+    }
+  ]
+}
